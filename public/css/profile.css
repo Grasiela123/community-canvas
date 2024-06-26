@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #EDCD92;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    height: 10vh;
+}
+
+.nav-brand {
+    color: #4B3621;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link {
+    color: #4B3621;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    color: #D2B48C;
+    border: 5px;
+}
+
+.profile-container-nav {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture-nav {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.edit-profile-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4B3621;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.edit-profile-button:hover {
+    background-color: #D2B48C;
+}
+
+
+.profile-tabs {
+    margin-top: 30px;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.tab-list li {
+    margin-right: 10px;
+}
+
+.tab-list li a {
+    text-decoration: none;
+    color: #4B3621;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #D2B48C;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.tab-list li a:hover {
+    background-color: #4B3621;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content h3 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    color: #6E6259;
+    line-height: 1.6;
+}
+
+.news-item, .event-item, .poll-item {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #F9F6F0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-tab {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+
+.dropbtn-tab {
+    background-color: transparent;
+    color: #4B3621;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content-tab {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    right: 0;
+    top: 100%;
+    text-align: center;
+}
+
+.dropdown-tab:hover .dropdown-content-tab {
+    display: block;
+}
+
+.dropdown-content-tab a {
+    color: #4B3621;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.dropdown-content-tab a:hover {
+    background-color: #D2B48C;
+    color: #fff;
+}
+
+.delete-btn {
+    display: inline;
+    padding: 10px;
+    color: #4B3621;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    min-width: 120px;
+}
+
+.delete-btn:hover {
+    background-color: #D2B48C;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 16px;
+    z-index: 1;
+    display: none;
+}
+
+.toast.error {
+    background-color: #f44336;
+}

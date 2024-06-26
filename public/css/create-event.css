@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #EDCD92;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    height: 10vh;
+}
+
+.nav-brand {
+    color: #4B3621;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link {
+    color: #4B3621;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    color: #FFFDD0;
+    border: 5px;
+}
+
+.profile-container-nav {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture-nav {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 10px;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.eventContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    overflow: auto;
+}
+
+.eventContainer-content {
+    background-color: #faf0e6;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #8b4513;
+    width: 60%;
+}
+
+#submitButton{
+    background-color: #c19d6e;
+    color: #8b4513;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#cancelButton{
+    background-color: #c19d6e;
+    color: #8b4513;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}

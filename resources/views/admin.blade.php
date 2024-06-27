@@ -16,7 +16,6 @@
             <img src="{{ Auth::user()->picture ?: asset('/images/profile_pic.jpg') }}" alt="Profile Picture" class="profile-picture">
                 <div class="profile-details">
                     <h2>{{ Auth::user()->username }} (Admin)</h2>
-                    <a href="/edit-profile" class="edit-profile-button">Ubah Profil</a>
                 </div>
             </div>
         </div>

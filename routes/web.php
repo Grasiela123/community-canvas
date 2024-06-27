@@ -81,8 +81,8 @@ Route::controller(AdminController::class)->group(function () {
     Route::put('/update-news-admin/{news}', 'updateNews')->name('news.update.admin');
     Route::get('/update-poll-admin/{poll}', 'getPollById')->name('view.poll.update.admin');
     Route::put('/update-poll-admin/{poll}', 'updatePoll')->name('poll.update.admin');
-    Route::get('/update-event/{event}', 'getEventById')->name('view.event.update.admin');
-    Route::put('/update-event/{event}', 'updateEvent')->name('event.update.admin');
+    Route::get('/update-event-admin/{event}', 'getEventById')->name('view.event.update.admin');
+    Route::put('/update-event-admin/{event}', 'updateEvent')->name('event.update.admin');
 });
 
 

@@ -22,7 +22,7 @@ class AuthController extends Controller
         if(Auth::attempt(['username'=>$request->username, 'password'=>$request->password], true)){
             return redirect('/');
         }
-        return redirect()->back()->with(['login_error' => 'Nama Pengguna atau Kata Sandi salah.']);
+        return redirect()->back()->with(['error' => 'Nama Pengguna atau Kata Sandi salah.']);
     }
 
     public function logout() {

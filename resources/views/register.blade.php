@@ -16,20 +16,20 @@
             <h2>Daftar</h2>
             <form action="/register" method="post">
                 @csrf
-                <input type="text" name="username" placeholder="Nama Pengguna" required>
+                <input type="text" name="username" placeholder="Nama Pengguna (lebih dari 3 karakter)" required>
                 @error('username')
                     <div class="error">{{ $message }}</div>
                 @enderror
-                <input type="text" name="email" placeholder="Email" required>
+                <input type="text" name="email" placeholder="Email (Wajib)" required>
                 @error('email')
                     <div class="error">{{ $message }}</div>
                 @enderror
-                <input type="password" name="password" placeholder="Kata sandi" required>
+                <input type="password" name="password" placeholder="Kata sandi (Wajib)" required>
                 @error('password')
                     <div class="error">{{ $message }}</div>
                 @enderror
                 <select name="address" required>
-                    <option value="">Pilih Alamat</option>
+                    <option value="">Pilih Alamat (Wajib)</option>
                     <option value="BSD">BSD</option>
                     <option value="Gading Serpong">Gading Serpong</option>
                     <option value="Alam Sutera">Alam Sutera</option>

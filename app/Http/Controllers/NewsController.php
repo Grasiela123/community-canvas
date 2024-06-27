@@ -53,8 +53,8 @@ class NewsController extends Controller
         $news = News::findOrFail($newsId);
 
         $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
+            'title' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
             'category' => 'required|string|in:kecelakaan,kesehatan,cuaca,acara,bisnis,lain-lain',
             'picture' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);

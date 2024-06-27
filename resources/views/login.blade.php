@@ -8,6 +8,8 @@
 </head>
 <body>
     @include('layout.navbar')
+    <div id="toastContainer"></div>
+
     <div class="container">
         <div class="login-image">
             <img src="/images/login-bg.jpg" alt="Login">
@@ -31,5 +33,13 @@
             </div>
         </div>
     </div>
+
+    <script src="/js/login.js"></script>
+    @if(session('error'))
+        <script>
+            showToast("{{ session('error') }}");
+        </script>
+    @endif
+
 </body>
 </html>

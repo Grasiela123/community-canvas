@@ -30,5 +30,5 @@ function showToast(message, type = 'success') {
     setTimeout(function() {
         toast.style.display = 'none';
         toastContainer.removeChild(toast);
-    }, 3000);
+    }, 4000);
 }

@@ -22,7 +22,7 @@
 
         <div class="profile-tabs">
             <ul class="tab-list">
-                <li><a href="#user-tab">User</a></li>
+                <li><a href="#user-tab">Pengguna</a></li>
                 <li><a href="#news-tab">Berita</a></li>
                 <li><a href="#polls-tab">Poll</a></li>
                 <li><a href="#events-tab">Acara</a></li>

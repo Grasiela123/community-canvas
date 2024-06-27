@@ -5,7 +5,7 @@
         <a href="http://127.0.0.1:8000/#contact" class="nav-link">Kontak</a>
         @if (Auth::check())
         <a href="/feed" class="nav-link">Beranda</a>
-        <a href="/calendar" class="nav-link">Kalendar</a>
+        <a href="/calendar" class="nav-link">Kalender</a>
         @if (Auth::user()->role == 'admin')
         <a href="/admin" class="nav-link">Admin</a>
         @endif

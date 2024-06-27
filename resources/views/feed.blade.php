@@ -34,8 +34,8 @@
                     <label for="feed_type">Filter bedasarkan Tipe Feed:</label>
                     <select id="feed_type" name="feed_type">
                         <option value="">Pilih Tipe Feed</option>
-                        <option value="news" {{ request('feed_type') == 'news' ? 'selected' : '' }}>News</option>
-                        <option value="polls" {{ request('feed_type') == 'polls' ? 'selected' : '' }}>Polls</option>
+                        <option value="news" {{ request('feed_type') == 'news' ? 'selected' : '' }}>Berita</option>
+                        <option value="polls" {{ request('feed_type') == 'polls' ? 'selected' : '' }}>Poll</option>
                     </select>
                 </div>
                 <div class="button-group">

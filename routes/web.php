@@ -23,7 +23,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::controller(UserController::class)->group(function() {
     Route::get('/register', 'register');

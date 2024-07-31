@@ -1,8 +1,8 @@
 <nav class="navbar">
     <a href="/" class="nav-brand">Community Canvas</a>
     <div class="nav-items">
-        <a href="http://127.0.0.1:8000/#about" class="nav-link">Tentang</a>
-        <a href="http://127.0.0.1:8000/#contact" class="nav-link">Kontak</a>
+    <a href="{{ route('home') }}#about" class="nav-link">Tentang</a>
+    <a href="{{ route('home') }}#contact" class="nav-link">Kontak</a>
         @if (Auth::check())
         <a href="/feed" class="nav-link">Beranda</a>
         <a href="/calendar" class="nav-link">Kalender</a>

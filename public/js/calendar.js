@@ -101,7 +101,10 @@ function updateTodayEvents(dateStr) {
 
     var todayEventsList = document.getElementById('todayEvents');
     todayEventsList.innerHTML = '';
-    
+
+    const eventsByDateRoute = 'https://community-canvas.vercel.app/calendar';
+    const assetBaseUrl = 'https://community-canvas.vercel.app/';
+
     fetch(eventsByDateRoute, {
         method: 'POST',
         headers: {
